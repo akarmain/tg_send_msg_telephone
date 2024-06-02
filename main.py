@@ -15,6 +15,8 @@ async def send_message(receiver, txt_msg):
 
 
 if __name__ == '__main__':
+    number_order = 123
+
     user_name_or_id = "akarmain"
-    text_msg = 'Hello World!\n\n autor @akarmain'
+    text_msg = 'Hello World!\n\n autor @akarmain' + number_order
     asyncio.run(send_message(user_name_or_id, text_msg))
